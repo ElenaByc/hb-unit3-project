@@ -1,5 +1,8 @@
 package com.javaunit3.springmvc;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class BatmanMovie implements Movie {
 
     public String getTitle() {
