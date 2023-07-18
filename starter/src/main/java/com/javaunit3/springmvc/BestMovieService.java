@@ -5,10 +5,19 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BestMovieService {
-    @Autowired
     private Movie movie;
+
+    @Autowired
+    public BestMovieService(Movie movie) {
+        this.movie = movie;
+    }
 
     public Movie getBestMovie() {
         return movie;
     }
+//
+//    @Autowired
+//    public void setMovie(Movie movie) {
+//        this.movie = movie;
+//    }
 }
