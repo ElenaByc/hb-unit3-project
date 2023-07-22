@@ -10,7 +10,8 @@ public class MovieEntity {
     @Column(name = "movie_id")
     private Integer id;
 
-    @Column(name = "title")
+//    @Column(name = "title")
+    @Column(name = "title", nullable = false)
     private String title;
 
     @Column(name = "maturity_rating")
