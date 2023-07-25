@@ -86,7 +86,15 @@ public class MovieController {
 
         session.update(movieEntity);
 
+//        session.getTransaction().commit();
+
+//        session.beginTransaction();
+//
+        List<MovieEntity> movieEntityList = session.createQuery("from MovieEntity").list();
+
         session.getTransaction().commit();
+
+        model.addAttribute("movies", movieEntityList);
 
         return "voteForBestMovie";
     }

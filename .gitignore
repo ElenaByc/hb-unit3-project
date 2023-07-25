@@ -1,0 +1,6 @@
+.idea
+starter/target/
+starter/src/test/
+
+starter/src/main/resources/hibernate.cfg.xml
+starter/src/main/resources/application.properties
